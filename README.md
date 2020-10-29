@@ -1,2 +1,2 @@
 # bootcamp
-This repo is the exercises of the bootcamp courses
+This repo is for the exercises of the bootcamp courses
