@@ -1,0 +1,46 @@
+Πως το σκέφτηκα σαν structure
+Big loop{
+Course: give: title, stream, type ,startDate, endDate  stored -->  Course course1 =new Course(title,stream,type,startDate,endDate)
+		smaller loop1{
+		Give the assignments that this course have : title of first assignment -->title: exercise1
+						What is the description of exercise1?-->description: make a calcualtor  Assignment ass1=new Assignment(title,description,subDate) or Assignment(title,description,subDate,title/*tou course*/,stream,type)
+							when does it have to be submitted?-->subDate: 15/12/2021
+							     title of 2nd assignment --> title exercise2
+									.
+									.
+									.
+								//All of these assignments are stored to an arraylist with AssignmentPerCourse type
+			  }end of smaller loop1
+		smaller loop 2{
+		Give the trainers that teach this course: firstName: Dimitris, lastname: Nikolidakis --> Trainer trainer=new Trainer(firstName, lastName, title,stream,type) //the last 3 are from the course
+
+							: firstName: George, lastname Pasparakis --> same as above
+									.
+									.
+									.
+								//All the trainers are stored to an arraylist with TrainersPerCourse type
+			}end of small loop 2
+		smaller loop3 {
+		Give the students that are enrolled in this course : name, lastname2, dateofBirth,... StudentPerCourse studentpc=new StudentPerCourse(name,lastname2,...., title,stream,type)
+												      Student student= new Student(name,lastname2,dateofBrith,....) without title,stream,type
+								more students 
+										.
+									       	.
+									     	.
+										students.add(student)
+										studentspercourse.add(studentpc)
+				}end of smaller loop3
+								//all of the students are stored in an arraylist with studentsPercourse type and a second arraylist type Students for the whole school student print
+								//or all are Student type but with overloading constructos in the Student class
+								//same for trainers and assignments.That's because the first 4 requirements are print all the students of the school,print all the trainers, all the courses , all the assignments
+								// the other 3 are print the trainers per course,assignments per course, students per course
+    
+
+}end of big loop. for next course it goes in the big loop again.
+
+	After that i want to check  specific data from the arraylists like lets say name,lastname,dateOfBirth of a student from course a and if he matches with one from course b he is the same student
+
+
+ 
+
+			
